@@ -1,0 +1,22 @@
+.gif-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 90vw;
+  padding: 1rem;
+  margin: 1rem;
+  row-gap: 1rem;
+  border: 1px solid white;
+  border-radius: 20px;
+  transition: all 1s;
+}
+
+.gif-container:hover {
+  border-color: #EF233C;
+}
+
+.gif-container img {
+  border-radius: 10px;
+}/*# sourceMappingURL=gifStyle.css.map */
