@@ -1,5 +1,7 @@
 // Imports
 import React from 'react';
+import { H3Gif } from '../../styledComponents/H3Gif';
+import { Paragraph } from '../../styledComponents/Paragraph';
 import '../../styles/gif/gifStyle.css';
 
 /**
@@ -10,20 +12,20 @@ import '../../styles/gif/gifStyle.css';
 function Gif({ title, user, url }) {
   return (
     <div className='gif-container'>
-      <h3>
+      <H3Gif>
         {title === '' ?
-          (<h3 style={{ color: 'tomato' }}>Title not found 😢</h3>)
+          (<H3Gif style={{ color: 'tomato' }}>Title not found 😢</H3Gif>)
           :
           title
         }
-      </h3>
-      <h4> User:
+      </H3Gif>
+      <H3Gif> User
         {user === '' ?
-          (<p style={{ color: 'tomato' }}>User without name 😐</p>)
+          (<Paragraph style={{ color: 'tomato' }}>User without name 😐</Paragraph>)
           :
-          (<p style={{ color: '#EF233C' }}>{user}</p>)
+          (<Paragraph style={{ color: '#EF233C' }}>{user}</Paragraph>)
         }
-      </h4>
+      </H3Gif>
       <img src={url} width='400'></img>
     </div>
   );

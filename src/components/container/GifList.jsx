@@ -2,7 +2,7 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import { CallApi } from '../../services/CallApi';
 import Gif from '../pure/Gif';
-
+import '../../styles/gifList/gifListStyle.css'
 /*
  ? This component will render the list of all gifs.
  * @param { Receives a word. This word will be passed to call API. }
@@ -28,7 +28,7 @@ function GifList({ word }) {
     });
 
     return (
-        <Fragment>
+        <div className='gif-list-container'>
             {/* Return each gif in array gifs. */}
             {
                 gifs.map(gif => {
@@ -36,8 +36,8 @@ function GifList({ word }) {
                         <Gif title={gif.title} user={gif.username} url={gif.images.downsized.url} key={gif.id} />
                     );
                 })
-            };
-        </Fragment>
+            }
+        </div>
     );
 };
 

@@ -14,4 +14,6 @@ export const Container = styled.div`
     color: white;
     text-align: center;
     font-size: larger;
+    grid-column: 1 / 4;
+    grid-row: 2 / 4;
 `

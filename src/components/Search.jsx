@@ -4,6 +4,7 @@ import { Container } from '../styledComponents/Container';
 import GifList from './container/GifList';
 import { Button } from '../styledComponents/Button';
 import '../styles/search/searchStyle.css';
+import { Subtitle } from '../styledComponents/Subtitle';
 
 
 /*
@@ -25,7 +26,7 @@ function Search() {
 
     return (
         <Container>
-            <h2>Search a gif</h2>
+            <Subtitle>Search a gif</Subtitle>
             <input ref={inputRef} placeholder='Insert a word'></input>
             <Button onClick={takeValue}>Search</Button>
             <GifList word={reference}></GifList> 

@@ -1,0 +1,5 @@
+.gif-list-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}/*# sourceMappingURL=gifListStyle.css.map */
