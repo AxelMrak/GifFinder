@@ -1,2 +1,2 @@
-# GifFinder
+# GifFinder Project
  
