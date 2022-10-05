@@ -22,9 +22,11 @@ function GifList({ word }) {
      * Too we catch the error.
     */
     useEffect(() => {
+
         CallApi({ keyword: word })
             .then(gifs => setGifs(gifs))
             .catch(e => console.error(e));
+
     });
 
     return (
@@ -33,7 +35,7 @@ function GifList({ word }) {
             {
                 gifs.map(gif => {
                     return (
-                        <Gif title={gif.title} user={gif.username} url={gif.images.downsized.url} key={gif.id} />
+                        <Gif title={gif.title} user={gif.username} url={gif.images.downsized.url}  key={gif.id} />
                     );
                 })
             }

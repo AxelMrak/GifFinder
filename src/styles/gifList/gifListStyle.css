@@ -2,4 +2,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  row-gap: 1rem;
 }/*# sourceMappingURL=gifListStyle.css.map */
