@@ -16,12 +16,12 @@ function App() {
       <Router>
       {/* Header is set in app and doesn't in an individual component because we need always show the header in all routes */}
         <header className='head'>
-          <Link to={'/'}>Home</Link>
+          <Link to={'/GifFinder'}>Home</Link>
           <Link to={'/search'}>Search</Link>
         </header>
         {/* Routes */}
         <Routes>
-          <Route exact path='/' element={<HomePage />} />
+          <Route exact path='/GifFinder' element={<HomePage />} />
           <Route path='/search' element={<Search />} />
           {/* 404 Route */}
           <Route path='*' element={<ErrorPage />} />
